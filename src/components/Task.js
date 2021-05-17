@@ -8,7 +8,7 @@ export default function Task({
 }) {
   return (
     <div className={`list-item ${state}`}>
-      <label for="" className="checkbox">
+      <label className="checkbox">
         <input
           type="checkbox"
           defaultChecked={state === "TASK_ARCHIVED"}
@@ -24,9 +24,9 @@ export default function Task({
         <input
           type="text"
           value={title}
-          readonly={true}
+          readOnly={true}
           placeholder="Input title"
-          style={{ background: "red" }}
+          style={{ background: "red", textOverflow: "ellipsis" }}
         />
       </div>
       <div className="actions" onClick={(e) => e.stopPropagation()}>
