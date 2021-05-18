@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v1
       - run: yarn
         # adds chromatic as a step in the workflow
-      - uses: chromatic/action@v1
+      - uses: chromaui/action@v1
         # options required for chromatic's github action
         with:
           # chromatic project token
